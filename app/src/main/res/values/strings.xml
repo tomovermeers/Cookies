@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cookies</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="order">order</string>
+</resources>
