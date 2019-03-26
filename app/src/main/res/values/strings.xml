@@ -4,5 +4,16 @@
     <string name="last_name">Last Name</string>
     <string name="login">Login</string>
     <string name="signup">Signup</string>
-    <string name="order">order</string>
+    <string name="order">Order</string>
+    <string name="vanilla">Vanilla</string>
+    <string name="order_cookies">ORDER COOKIES</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="frangipane">Frangipane</string>
+    <string name="butter">Butter</string>
+    <string name="total">Total</string>
+    <string name="fill_in_your_lastname">Fill in your last name</string>
+    <string name="fill_in_your_firstname">Fill in your first name</string>
+    <string name="email">Email</string>
+    <string name="fill_in_your_email">Fill in your email</string>
+    <string name="phone_number">Phone number</string>
 </resources>
