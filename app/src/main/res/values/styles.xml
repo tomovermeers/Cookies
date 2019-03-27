@@ -10,6 +10,7 @@
 
     <style name="MyTitleStyle">
         <item name="android:layout_gravity">center</item>
+        <item name="android:elevation">20dp</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">40sp</item>
         <item name="android:textStyle">bold</item>
