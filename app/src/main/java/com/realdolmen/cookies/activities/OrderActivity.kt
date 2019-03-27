@@ -21,6 +21,14 @@ class OrderActivity : AppCompatActivity() {
                 val quantity = et_quantity_chocolate.text.toString().toInt()
                 total += quantity*3.75
             }
+            if(cb_butter.isChecked){
+                val quantity = et_quantity_chocolate.text.toString().toInt()
+                total += quantity*4.25
+            }
+            if(cb_frangipane.isChecked){
+                val quantity = et_quantity_chocolate.text.toString().toInt()
+                total += quantity*3.25
+            }
             tv_total.text = total.toString()
         }
     }

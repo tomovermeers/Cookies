@@ -11,7 +11,7 @@
         tools:context=".activities.OrderActivity">
 
     <TextView style="@style/MyTitleStyle" android:text="@string/order_cookies" android:layout_width="match_parent"
-              android:layout_weight="3"
+              android:layout_weight="2"
               android:layout_height="wrap_content"/>
     <LinearLayout android:layout_width="match_parent" android:orientation="horizontal"
                   android:layout_weight="1"
@@ -19,7 +19,7 @@
         <CheckBox android:id="@+id/cb_vanilla" android:textStyle="bold" android:layout_width="120dp"
                   android:layout_height="wrap_content" android:text="@string/vanilla"/>
         <EditText android:layout_width="120dp"
-                  android:elevation="20dp"
+                  android:elevation="10dp"
                   android:layout_gravity="end"
                   android:gravity="end"
                   android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
         <CheckBox android:id="@+id/cb_chocolate" android:textStyle="bold" android:layout_width="120dp"
                   android:layout_height="wrap_content" android:text="@string/chocolate"/>
         <EditText android:layout_width="120dp"
-                  android:elevation="20dp"
+                  android:elevation="10dp"
                   android:inputType="number"
                   android:gravity="right"
                   android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
         <CheckBox android:id="@+id/cb_frangipane" android:textStyle="bold" android:layout_width="120dp"
                   android:layout_height="wrap_content" android:text="@string/frangipane"/>
         <EditText android:layout_width="120dp"
-                  android:elevation="20dp"
+                  android:elevation="10dp"
                   android:inputType="number"
                   android:gravity="end"
                   android:layout_height="wrap_content"
@@ -60,62 +60,61 @@
         <CheckBox android:id="@+id/cb_butter" android:textStyle="bold" android:layout_width="120dp"
                   android:layout_height="wrap_content" android:text="@string/butter"/>
         <EditText android:layout_width="120dp"
-                  android:elevation="20dp"
+                  android:elevation="10dp"
                   android:inputType="number"
                   android:gravity="end"
                   android:layout_height="wrap_content"
                   android:id="@+id/et_quantity_butter"/>
 
     </LinearLayout>
-    <LinearLayout android:gravity="center" android:layout_weight="1" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <Button android:gravity="center"
-                android:elevation="20dp"
+    <LinearLayout android:gravity="start"  android:layout_weight="1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="start"
+                android:elevation="10dp"
                 android:background="@drawable/styled_btn" android:id="@+id/btn_total" android:text="@string/total" android:layout_width="80dp" android:layout_height="80dp"/>
-        <TextView android:layout_marginLeft="20dp" android:elevation="20dp" android:gravity="end" android:id="@+id/tv_total" android:hint="@string/total" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:layout_marginLeft="20dp" android:elevation="10dp" android:gravity="end" android:id="@+id/tv_total" android:hint="@string/total" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
     </LinearLayout>
     <LinearLayout android:layout_width="match_parent" android:orientation="horizontal"
+                  android:layout_margin="10dp"
                   android:layout_weight="1"
                   android:gravity="start" android:layout_height="wrap_content">
         <TextView android:id="@+id/tv_last_name" android:textStyle="bold" android:layout_width="120dp"
-                  android:elevation="20dp"
+                  android:elevation="10dp"
                   android:layout_height="wrap_content" android:text="@string/last_name"/>
 
         <EditText android:layout_width="250dp"
-                  android:elevation="20dp"
+                  android:elevation="10dp"
                   android:gravity="end"
                   android:hint="@string/fill_in_your_lastname"
                   android:layout_height="wrap_content"
                   android:id="@+id/et_last_name"/>
     </LinearLayout>
-    <LinearLayout android:layout_width="match_parent" android:orientation="horizontal"
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_margin="10dp" android:orientation="horizontal"
                   android:layout_weight="1"
                   android:gravity="start" android:layout_height="wrap_content">
 
         <TextView android:id="@+id/tv_first_name" android:textStyle="bold"
-                  android:elevation="20dp"
+                  android:elevation="10dp"
                   android:layout_width="120dp"
                   android:layout_height="wrap_content" android:text="@string/first_name"/>
 
         <EditText android:layout_width="250dp"
-                  android:elevation="20dp"
+                  android:elevation="10dp"
                   android:gravity="end"
                   android:hint="@string/fill_in_your_firstname"
                   android:layout_height="wrap_content"
                   android:id="@+id/et_first_name"/>
     </LinearLayout>
-    <LinearLayout android:layout_width="match_parent" android:orientation="horizontal"
+    <LinearLayout android:layout_margin="10dp"
+                  android:layout_width="match_parent" android:orientation="horizontal"
                   android:layout_weight="1"
                   android:gravity="start" android:layout_height="wrap_content">
         <TextView android:id="@+id/tv_email" android:textStyle="bold" android:layout_width="120dp"
-                  android:elevation="20dp"
+                  android:elevation="10dp"
                   android:layout_height="wrap_content" android:text="@string/email"/>
         <EditText android:layout_width="250dp"
                   android:gravity="end"
-                  android:elevation="20dp"
-                  android:hint="@string/fill_in_your_email"
-                  android:layout_height="wrap_content" android:text="@string/email"/>
-        <EditText android:layout_width="250dp"
-                  android:gravity="end"
+                  android:elevation="10dp"
                   android:hint="@string/fill_in_your_email"
                   android:layout_height="wrap_content"
                   android:id="@+id/et_email"/>
@@ -123,16 +122,17 @@
     <LinearLayout android:layout_margin="10dp" android:layout_width="match_parent" android:orientation="horizontal"
                   android:layout_weight="1"
                   android:gravity="start" android:layout_height="wrap_content">
-        <TextView android:id="@+id/tv_phone_number" android:elevation="20dp" android:textStyle="bold" android:layout_width="120dp"
+        <TextView android:id="@+id/tv_phone_number" android:elevation="10dp" android:textStyle="bold" android:layout_width="120dp"
                   android:layout_height="wrap_content" android:text="@string/phone_number"/>
 
         <EditText android:layout_width="250dp"
-                  android:elevation="20dp"
+                  android:elevation="10dp"
                   android:gravity="end"
                   android:hint="@string/fill_in_your_phone_number"
                   android:layout_height="wrap_content"
                   android:id="@+id/et_phone_number"/>
     </LinearLayout>
-    <Button android:elevation="20dp"
+    <Button android:elevation="10dp"
+            android:layout_gravity="start"
             android:background="@drawable/styled_btn" android:id="@+id/btn_order" android:text="@string/order" android:layout_width="80dp" android:layout_height="80dp"/>
 </LinearLayout>
